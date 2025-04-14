@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/favicon/Logo.svg" type="image/x-icon" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/css/style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js" defer></script>
+
+		<!-- JS -->
+		<script src="./js/generateUserAgent.js" defer></script>
+
+    <title>User-Agent Generator - генератор фейковых юзер агентов</title>
+  </head>
+  <body>
+    <main>
+      <article class="main-article">
+        <p class="main-article__subtitle">
+          Простой генератор, который позволяет генерировать user-агентов в большом количестве
+        </p>
+        <h1 class="main-article__title">USER AGENT GENERATOR</h1>
+      </article>
+
+      <section class="filters">
+        <div class="filters__content">
+          <h2 class="filters__title">Выберите Браузер</h2>
+
+          <form id='browserForm' class="filters__selection" action="">
+            <label for="" class="image-checkbox">
+              <input type="checkbox" name="browser" value="chrome"/>
+              <iconify-icon icon="ri:chrome-fill" width="60"></iconify-icon>
+            </label>
+
+            <label for="" class="image-checkbox">
+              <input type="checkbox" name="browser" value="firefox" />
+              <iconify-icon icon="mdi:firefox" width="60"></iconify-icon>
+            </label>
+
+            <label for="" class="image-checkbox">
+              <input type="checkbox" name="browser" value="opera" />
+              <iconify-icon icon="ri:opera-fill" width="60"></iconify-icon>
+            </label>
+
+            <label for="" class="image-checkbox">
+              <input type="checkbox" name="browser" value="edge" />
+              <iconify-icon icon="lineicons:microsoft-edge" width="60"></iconify-icon>
+            </label>
+
+            <label for="" class="image-checkbox">
+              <input type="checkbox" name="browser" value="safari" />
+              <iconify-icon icon="mingcute:safari-fill" width="60"></iconify-icon>
+            </label>
+          </form>
+        </div>
+
+        <div class="filters__content">
+          <h2 class="filters__title">Выберите Устройство</h2>
+
+          <form id='deviceForm' class="filters__selection" action="">
+            <label for="" class="image-checkbox">
+              <input type="checkbox" name="device" value="windows" />
+              <iconify-icon icon="mingcute:windows-fill" width="60"></iconify-icon>
+            </label>
+
+            <label for="" class="image-checkbox">
+              <input type="checkbox" name="device" value="linux" />
+              <iconify-icon icon="uil:linux" width="60"></iconify-icon>
+            </label>
+
+            <label for="" class="image-checkbox">
+              <input type="checkbox" name="device" value="mac" />
+              <iconify-icon icon="f7:logo-macos" width="60"></iconify-icon>
+            </label>
+
+            <label for="" class="image-checkbox">
+              <input type="checkbox" name="device" value="android" />
+              <iconify-icon icon="uil:android" width="60"></iconify-icon>
+            </label>
+
+            <label for="" class="image-checkbox">
+              <input type="checkbox" name="device" value="ios" />
+              <iconify-icon icon="qlementine-icons:mac-16" width="60"></iconify-icon>
+            </label>
+          </form>
+        </div>
+      </section>
+
+			<button id='generateButton' class="filters__generate-button">Сгенерировать 
+				<iconify-icon icon="line-md:arrow-up" width="24"></iconify-icon>
+			</button>
+
+      <section class="agent-list">
+        <h3 class="agent-list__title">Список ваших user-агентов:</h3>
+      </section>
+    </main>
+  </body>
+</html>
